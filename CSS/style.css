@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(20deg, #1E90FF 0%, #87CEEB); /*DodgerBlue	#1E90FF, */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: #fefefa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    cursor: default;
+    
+}
+
+.form {
+    padding: 20px;
+   
+
+}
+
+.form_control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form_control label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form_control input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form_control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+
+}
+
+.form_control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    background-color: #00BFFF;
+    border: 2px solid #00BFFF;
+    color: #FFF;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*Error and Success*/
+
+.form_control.success input {
+    border-color: #2ecc71;
+}
+
+.form_control.error input {
+    border-color: #FF0000;
+}
+
+.form_control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form_control.error i.fa-exclamation-circle{
+    color: #FF0000;
+    visibility: visible;
+}
+.form_control.error small{
+    color: #FF0000;
+    visibility: visible;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
